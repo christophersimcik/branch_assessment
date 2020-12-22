@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="view_model"
+            type="com.simcik.branchassessment.todoList.TodoListViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutDescription="@xml/todo_list_fragment_scene">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/todo_list_selection_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/todo_list_no_data_message"
+            style="@style/Display_Message"
+            android:text="@string/add_a_list"
+            app:layout_constraintBottom_toTopOf="@id/off_mid_guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            bind:noData="@{view_model.todoList}" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/todo_list_add_button"
+            style="@style/Add_Button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/list" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/off_mid_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".425" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

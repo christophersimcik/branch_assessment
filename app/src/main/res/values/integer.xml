@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- strike_through_text -->
+    <integer name="strike_transparency">150</integer>
+    <integer name="strike_max_lines">1</integer>
+
+    <!-- todo_item_decor -->
+    <integer name="todo_item_decor_bottom">15</integer>
+
+    <!-- list_item_decor -->
+    <integer name="list_item_decor_bottom">12</integer>
+</resources>

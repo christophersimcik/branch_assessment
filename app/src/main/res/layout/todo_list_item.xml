@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="listWithTodos"
+            type="com.simcik.branchassessment.database.entities.ListWithTodos" />
+
+        <variable
+            name="view_model"
+            type="com.simcik.branchassessment.todoList.TodoListViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/todo_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:paddingStart="@dimen/list_main_container_padding"
+        android:paddingTop="@dimen/list_main_container_padding"
+        android:paddingEnd="@dimen/list_main_container_padding">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/list_name_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/list_btm_margin"
+            android:gravity="start|center_vertical"
+            android:text="@{listWithTodos.todoList.name}"
+            android:textSize="@dimen/list_name_text_sz"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/list_entry_count_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/list_entry_count_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/list_btm_margin"
+            android:gravity="start"
+            android:text="@{String.format(@string/entry_count, listWithTodos.getListSize())}"
+            app:layout_constraintBottom_toTopOf="@id/bottom_divider"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/list_complete_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/list_btm_margin"
+            android:gravity="center_horizontal"
+            android:text="@{String.format(@string/percentage_complete, listWithTodos.percentageComplete)}"
+            app:layout_constraintBottom_toTopOf="@id/bottom_divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/list_creation_date_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/list_btm_margin"
+            android:gravity="end"
+            android:text='@{view_model.getTime(listWithTodos.todoList.timestamp)}'
+            app:layout_constraintBottom_toTopOf="@id/bottom_divider"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <View
+            android:id="@+id/bottom_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_btm_div_height"
+            android:background="@color/list_item_color_selector"
+            android:duplicateParentState="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

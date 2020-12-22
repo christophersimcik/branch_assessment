@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Strike_Through_Text_View -->
+    <declare-styleable name="StrikeThroughTextView">
+        <attr name="color" format="color" />
+        <attr name="completed" format="boolean" />
+        <attr name="padding" format="dimension" />
+        <attr name="transparency" format="integer" />
+        <attr name="strokeSz" format="dimension" />
+    </declare-styleable>
+
+</resources>

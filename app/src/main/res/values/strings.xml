@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Branch Assessment</string>
+
+    <!-- todo_fragment  -->
+    <string name="no_description_provided">No Todo description provided</string>
+    <string name="add_a_todo">Add a <b>Todo</b></string>
+
+    <!-- list_fragment  -->
+    <string name="title"><b>TODO</b> Lists</string>
+    <string name="no_name_provided">No List name provided</string>
+    <string name="add_a_list">Add a <b>List</b></string>
+
+    <!-- list_item -->
+    <string name="percentage_complete">%1$d%% Completed</string>
+
+    <!-- submit_button -->
+    <string name="submit_label">Submit</string>
+
+    <!-- todo_list_selection_item-->
+    <string name="entry_count">%1$d Entries</string>
+
+    <!-- creation_dialog -->
+    <string name="todo_header">NEW TODO</string>
+    <string name="list_header">NEW LIST</string>
+    <string name="description_hint"><i>Enter Description</i></string>
+    <string name="name_hint"><i>Enter Name</i></string>
+</resources>

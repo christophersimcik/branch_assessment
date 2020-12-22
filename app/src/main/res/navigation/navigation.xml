@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/todoListSelectionFragment">
+
+    <fragment
+        android:id="@+id/todoListSelectionFragment"
+        android:name="com.simcik.branchassessment.todoList.TodoListFragment"
+        android:label="TodoListSelectionFragment" >
+        <action
+            android:id="@+id/action_todoListSelectionFragment_to_todoListFragment"
+            app:destination="@id/todoListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/todoListFragment"
+        android:name="com.simcik.branchassessment.todo.TodoFragment"
+        android:label="TodoListFragment" >
+        <action
+            android:id="@+id/action_todoListFragment_to_todoListSelectionFragment"
+            app:destination="@id/todoListSelectionFragment" />
+    </fragment>
+</navigation>

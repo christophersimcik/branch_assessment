@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- activity -->
+    <dimen name="activity_padding_lateral">5dp</dimen>
+    <dimen name="activity_padding_top">5dp</dimen>
+    <dimen name="activity_padding_bottom">7dp</dimen>
+
+    <!-- data msg  -->
+    <dimen name="no_data_msg_txt_sz">25sp</dimen>
+
+    <!-- dialog -->
+    <dimen name="header_description_field_height">100dp</dimen>
+    <dimen name="header_padding">25dp</dimen>
+    <dimen name="header_txt_sz">22sp</dimen>
+
+    <!-- add_button -->
+    <dimen name="add_button_dimensions">65dp</dimen>
+    <dimen name="add_button_margin">30dp</dimen>
+    <dimen name="add_button_padding">10dp</dimen>
+
+    <!-- submit_button -->
+    <dimen name="submit_button_radii">10dp</dimen>
+    <dimen name="submit_button_border">3dp</dimen>
+    <dimen name="submit_button_width">100dp</dimen>
+    <dimen name="submit_button_height">60dp</dimen>
+    <dimen name="submit_button_margin_top">25dp</dimen>
+    <dimen name="submit_button_text_sz">20sp</dimen>
+
+    <!-- strike_through_text -->
+    <dimen name="strike_text_size">18sp</dimen>
+    <dimen name="strike_android_padding">10dp</dimen>
+    <dimen name="strike_custom_padding">25dp</dimen>
+    <dimen name="strike_stroke_sz">3dp</dimen>
+
+    <!-- list_item -->
+    <dimen name="list_main_container_padding">10dp</dimen>
+    <dimen name="list_name_text_sz">20sp</dimen>
+    <dimen name="list_btm_margin">7dp</dimen>
+    <dimen name="list_btm_div_height">3dp</dimen>
+
+</resources>

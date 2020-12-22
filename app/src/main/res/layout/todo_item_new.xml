@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="todo"
+            type="com.simcik.branchassessment.database.entities.Todo" />
+
+        <variable
+            name="viewModel"
+            type="com.simcik.branchassessment.todo.TodoViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.simcik.branchassessment.custom.ui.StrikeThroughTextView
+            android:id="@+id/todo_description_text"
+            style="@style/Strike_Through"
+            android:text="@{todo.description}"
+            app:color="@color/strike"
+            app:completed="@{todo.completed}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:padding="@dimen/strike_custom_padding"
+            app:strokeSz="@dimen/strike_stroke_sz"
+            app:transparency="@integer/strike_transparency" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

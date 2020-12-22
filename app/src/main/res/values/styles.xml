@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- activity container -->
+    <style name="Activity_Container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingTop">@dimen/activity_padding_top</item>
+        <item name="android:paddingBottom">@dimen/activity_padding_bottom</item>
+        <item name="android:paddingStart">@dimen/activity_padding_lateral</item>
+        <item name="android:paddingEnd">@dimen/activity_padding_lateral</item>
+    </style>
+
+    <!-- add button -->
+    <style name="Add_Button">
+        <item name="android:layout_width">@dimen/add_button_dimensions</item>
+        <item name="android:layout_height">@dimen/add_button_dimensions</item>
+        <item name="android:layout_margin">@dimen/add_button_margin</item>
+        <item name="android:background">@drawable/add_button</item>
+        <item name="android:padding">@dimen/add_button_padding</item>
+    </style>
+
+    <!-- display message -->
+    <style name="Display_Message">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:alpha">0.0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/no_data_msg_txt_sz</item>
+    </style>
+
+    <!-- submit button -->
+    <style name="Submit_Button">
+        <item name="android:layout_width">@dimen/submit_button_width</item>
+        <item name="android:layout_height">@dimen/submit_button_height</item>
+        <item name="android:layout_marginTop">@dimen/submit_button_margin_top</item>
+        <item name="android:background">@drawable/submit_button</item>
+        <item name="android:text">@string/submit_label</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/submit_button_color_selector</item>
+        <item name="android:textSize">@dimen/submit_button_text_sz</item>
+    </style>
+
+    <!-- dialog header -->
+    <style name="Dialog_Header">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@drawable/todo_creation_dialog_header</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/header_padding</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/header_txt_sz</item>
+    </style>
+
+    <!-- strike through text view -->
+    <style name="Strike_Through">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:background">@drawable/todo_list_item_background</item>
+        <item name="android:text">@string/submit_label</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:textSize">@dimen/strike_text_size</item>
+        <item name="android:maxLines">@integer/strike_max_lines</item>
+        <item name="android:padding">@dimen/strike_android_padding</item>
+    </style>
+</resources>
